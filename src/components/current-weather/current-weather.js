@@ -21,7 +21,7 @@ const CurrentWeather = ({ data }) => {
                     <p className="weather-description">{data.weather[0].description}</p>
                 </div>
                 <div className="weather-icon-box">
-                <img alt="weather" id="weather-icon" className="weather-icon" src={`icons/${data.weather[0].icon}.png`} />
+                <img alt="weather" id="weather-icon" className="weather-icon" src={`${process.env.PUBLIC_URL}/icons/${data.weather[0].icon}.png`} />
                 </div>
             </div>
             <div className="bottom">

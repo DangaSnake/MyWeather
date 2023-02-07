@@ -31,7 +31,7 @@ const Forecast = ({ data }) => {
                         <AccordionItemHeading>
                             <AccordionItemButton>
                                 <div className="daily-item" id={`accordion-item-${idx}`}>
-                                    <img alt="weather" className="icon-small" src={`icons/${item.weather[0].icon}.png`} />
+                                    <img alt="weather" className="icon-small" src={`${process.env.PUBLIC_URL}/icons/${item.weather[0].icon}.png`} />
                                     <label className="day">{forecastDays[idx]}</label>
                                     <label className="description">{item.weather[0].description}</label>
                                     {/*This label below has a hardcoded min value as the API was not returning the correct data*/}
