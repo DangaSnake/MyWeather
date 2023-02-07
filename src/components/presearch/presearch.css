@@ -1,0 +1,58 @@
+.main-title {
+    font-size: 64px;
+    font-weight: 900;
+    color: white;
+    position: relative;
+    top: 300px;
+}
+
+.presearch-box {
+    width: 1215px;
+}
+
+.sub-text {
+    color: white;
+    position: relative;
+    top: 300px;
+    left: 500px;
+    float: left;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-title {
+        font-size: 18px;
+        width: 80vw;
+        
+
+    }
+
+    .sub-text {
+        top: 330px !important;
+        left: 0px;
+        margin-left: 20%;
+    }
+
+    .presearch-box {
+        width: 100vw;
+        text-align: center;
+    }
+}
